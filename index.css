@@ -1,0 +1,371 @@
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    width: 1240px;
+    
+}
+.banner .wrapper .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 251px;
+	height: 500px;
+	background-color: rgb(0, 0,0,0.8)
+}
+.banner .wrapper .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+.banner .wrapper .aside a{
+    position: relative;
+    display: block;
+    height: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 36px; 
+    padding-right: 19px;
+}
+.banner .wrapper .aside a span{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.banner .wrapper .aside a:hover{
+    background-color:#27ba9b ;
+}
+.banner .wrapper .aside a::after{
+    position: absolute;
+     right: 19px;
+     top: 19px;
+     content:'';
+     width: 6px;
+     height: 11px;
+     background-image: url(../images/sprites.png);
+     background-position: -80px -110px;
+}
+.next,
+.prev{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+	height: 45px;
+    background-color: rgba(0, 0, 0, 0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+
+}
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.next{
+    right: 10px ;
+    background-position: -23px -60px;
+}
+.banner ol{
+    position: absolute;
+    bottom: 30px;
+    left: 680px;
+    height: 10px;
+    width: 200px;
+
+}
+.banner ol li{
+    float: left;
+    margin-right: 24px;
+    background-color:rgb(255,255,255,0.4);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol .current{
+    background-color: #ffffff;
+}
+.goods .hd{
+    height: 118px;
+    line-height: 118px;
+}
+.goods .hd h2{
+    float: left;
+    display: block;
+    color: #333333;
+    font-size: 29px;
+    float: left;
+    font-weight: 400;
+    height: 118px;
+}
+.goods .hd h2 span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+}
+ 
+.goods .hd a,
+.fresh .hd .more{
+    float: right;
+    font-size: 16px;
+    color: #999999;
+}
+.goods .hd a::after,
+.fresh .hd .more::after,
+.clothes .hd .more::after{
+    display: inline-block;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+.goods .bd li{
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    text-align: center;
+}
+.goods .bd li:last-child{
+    margin: 0;
+}
+.goods .bd li img{
+    width: 304px;
+}
+.goods .bd li h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.goods .bd li div,
+.fresh .bd .right li div,
+.clothes .bd .right li div{
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .bd li div span,
+.fresh .bd .right li div span,
+.clothes .bd .right li div span{
+    font-size: 23px;
+}
+.goods .bd li b{
+     position: absolute;
+     top:18px;
+     left: 17px;
+     width: 28px;
+     height: 51px;
+     border: 1px solid #66cbb6;
+     border-radius: 5px;
+     color: #66cbb6;
+    line-height: 25px;
+}
+.recommend .hd{
+    height: 118px;
+    line-height: 118px;
+}
+.recommend .hd h2{
+    float: left;
+    display: block;
+    color: #333333;
+    font-size: 29px;
+    float: left;
+    font-weight: 400;
+    height: 118px;
+}
+.recommend .hd h2 span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+}
+.recommend .bd li{
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    text-align: center;
+}
+.recommend .bd li:last-child{
+    margin: 0;
+}
+.recommend .bd li img{
+    width: 304px;
+}
+.recommend .bd li h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.recommend .bd li div{
+    font-size: 16px;
+    color: #999999;
+}
+.band .hd{
+    position: relative;
+    height: 118px;
+    line-height: 118px;
+}
+.band .hd h2{
+    float: left;
+    display: block;
+    color: #333333;
+    font-size: 29px;
+    float: left;
+    font-weight: 400;
+    height: 118px;
+}
+.band .hd h2 span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+}
+.band .hd .right{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom:30px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+.band .hd .right:hover{
+    background-color: #27ba9b;
+}
+.band .bd li{
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 390px;
+    margin-right: 8px;
+    text-align: center;
+}
+.band .bd li:last-child{
+    margin: 0;
+}
+.band .bd li img{
+    width: 304px;
+}
+.fresh .hd{
+    height: 135px;
+    line-height: 135px;
+}
+.fresh .hd h2{
+    float: left;
+    color: #333333;
+    font-size: 29px;
+    font-weight: 400;
+}
+.fresh .hd .more{
+    float: right; 
+ }
+.fresh .hd ul{
+    float: right;	
+}
+.fresh .hd li{
+    float: left;
+    margin-right: 20px;
+}
+.fresh .hd li:last-child{
+    margin-right: 70px;
+}
+.fresh .hd li a:hover{
+    background-color: #66cbb6;
+    color:white;
+}
+.fresh .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.fresh .bd .right{
+    float: right;
+    width: 1000px;
+    height: 610px;
+}
+.fresh .bd .right li{
+    float: left;
+    width: 242px;
+    height: 304px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fresh .bd .right li img{
+    height: 184px;
+    width: 184px;
+    margin: 9px 14px 9px 7px;
+    margin-top: 12px;
+}
+.fresh .bd .right li h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.clothes .hd{
+    height: 135px;
+    line-height: 135px;
+}
+.clothes .hd h2{
+    float: left;
+    color: #333333;
+    font-size: 29px;
+    font-weight: 400;
+}
+.clothes .hd .more{
+    float: right; 
+ }
+.clothes .hd ul{
+    float: right;   
+}
+.clothes .hd li{
+    float: left;
+    margin-right: 20px;
+}
+.clothes .hd li:last-child{
+    margin-right: 70px;
+}
+.clothes .hd li a:hover{
+    background-color: #66cbb6;
+    color:white;
+}
+.clothes .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.clothes .left image{
+    width: 240px;
+    height: 610px;
+}
+.clothes .bd .right{
+    float: right;
+    width: 1000px;
+    height: 610px;
+}
+.clothes .bd .right li{
+    float: left;
+    width: 242px;
+    height: 304px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.clothes .bd .right li img{
+    height: 184px;
+    width: 184px;
+    margin: 9px 14px 9px 7px;
+    margin-top: 12px;
+}
+.clothes .bd .right li h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kefu{
+    margin-top: 35px;
+}
